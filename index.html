@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>   
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--link de iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--link tipo de letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/img/img-pwa/icon_192.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sawarabi+Gothic&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+   
+    <title>Tienda sportsls</title>
+    
+  
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container">
+         <div class="logo">
+            <img src="./img/logosportsls.jpeg" alt="logo sportsls" />
+         </div>
+            <div class="menu">
+            <nav>
+                <ul class="silebar" id="silebar">
+                    <li class="hideSilebar"><a href="#" onclick=hideSilebar()><i class="fas fa-times"></i></a></li>
+                    <li><a href="#promocion">Inicio</a></li>
+                    <li><a href="#seccion-descubre">Tienda</a></li>
+                    <li><a href="#seccion-sobreNosotros">Sobre Nosotros</a></li>
+                    <li><a href="#seccion-contactenos">Contáctenos</a></li>
+                    <li><a href="./pages/carrito.html"class="fa-solid fa-cart-shopping"></a></li>
+                    <li><a href="#seccion-contactenos"class="fa-solid fa-phone"></a></li>
+                    <button class="boton2"onclick="window.location.href='./pages/registrarme.html'">Registrarme</button>
+                   
+                 </ul>
+              <ul class="menu1">
+                <li><a href="#promocion">Inicio</a></li>
+                <li ><a href="#seccion-descubre">Tienda</a></li>
+                <li ><a href="#seccion-sobreNosotros">Sobre Nosotros</a></li>
+                <li ><a href="#seccion-contactenos">Contáctenos</a></li>
+                <li ><a href="./pages/carrito.html"class="fa-solid fa-cart-shopping"></a></li>
+                <li ><a href="#seccion-contactenos"class="fa-solid fa-phone"></a></li>
+                <button class="boton1"onclick="window.location.href='./pages/registrarme.html'">Registrarme</button> 
+                <li class="open"><a href="#" onclick=showSilebar()><i class="fa-solid fa-bars"></i></a></li>
+             </ul>  
+                      
+            </nav>                  
+            </div>
+        </div>
+       
+             
+    </header>
+    <main class="main" id="main">
+        
+        <section class="promocion" id="promocion">
+            <div class="coleccion">   
+                <h1>La proximá <br> colección de <br> ropa <br> deportiva</h1>
+                <br>
+                <p>Las tendencias de ropa y accesorios deportivos ya estan aqui <br> para la proximá temporada</p>
+                <br>
+                <br>
+                <button class="descubrelo" onclick="window.location.href='pages/tienda.html'">Descúbrelo</button>
+            </div>
+            <div class="imagen-principal">           
+                <img  src="img/tiendaimg4.jpg" alt="imagen 1">
+            </div>   
+        </section>
+        <div class="seccion-tendecias">
+            <h2>Nuestras tendencias</h2>
+            <hr>
+        </div>   
+        <section class="referencias"> 
+            <img src="img/tiendaimg24.jpg" alt="imagen 2" class="imagenprin">
+            <img src="img/tiendaimg10.jpg" alt="imagen 3" class="imagenprin">
+            <img src="img/tiendaimg7.jpg" alt="imagen 5" class="imagenprin">
+            <img src="img/tiendaimg9.jpg" alt="imagen 6" class="imagenprin">           
+            <img  src="img/tiendaimg8.jpg" alt="imagen 4"class="imagenprin">     
+        </section>
+        <div class="seccion-descubre" id="seccion-descubre">
+            <h2>Descubre todo lo que tenemos para ti.</h2>
+            <hr>
+        </div> 
+        <section class="paratodos">
+            <div class="paraella">
+                <div class="icon-estrella">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h2>Ropa deportiva para ella</h2>
+                <p>Ropa deportiva para ella. Actualiza tu guarda ropa deportiva con nuestra amplia selección de ropa deportiva para mujer. Descubre nuestra ultima colección de verano. </p>
+                <div class="detalles1" >
+                    <button class="detalles" onclick="window.location.href='pages/tienda.html' ">Mas detalles</button>
+                </div>
+            </div>
+            <div class="parael">
+                <div class="icon-estrella">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h2>Ropa deportiva <br> para él</h2>
+                <p>Combinaciones perfectas hechas por expertos en ropa deportiva. Encuentra ideas originales para tus conjuntos para la nueva temporada y para cada deporte. Descubre lo que hay para él. </p>
+                    <div class="detalles2" >
+                    <button class="detallesel" onclick="window.location.href='pages/tienda.html'">Mas detalles</button>
+                    </div>
+            </div>
+            <div class="accesorios">
+                <div class="icon-estrella">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h2>Accesorios de alta calidad</h2>
+                <p>¿Buscas accesorios deportivos? Descubre nuestra exclusiva marca de ropa y accesorios deportivos de alta calidad </p>
+                <br>
+                <br>
+                <div class="detalles2" >
+                    <button class="detallesel" onclick="window.location.href='pages/tienda.html' ">Mas detalles</button>
+                </div>
+            </div>
+        </section>
+        <div class="seccion-sobreNosotros" id="seccion-sobreNosotros">
+            <h2>Todo sobre nosotros</h2>
+            <hr>
+        </div> 
+        <section class="container_nosotros">
+            <div class="infonosotros">
+            <h1>Tienda deportiva</h1>
+            <br>
+            <p>Somos una tienda de ropa y accesorios deportivos especializada en ofrecer productos de alta calidad para atletas entusiastas del deporte. Ofrecemos variedad de ropa deportiva para hombres y mujeres desde camisetas y pantalones hasta zapatos y accesorios. <br><br>Enfócate en tus necesidades deportivas y déjanos proporcionarte la ropa y accesorios deportivos adecuados para ti.  </p>
+            <button onclick="window.location.href='./tienda.html'">Explora nuestras opciones</button>
+            </div>
+            
+            <div class="imagenNosotros">
+                <img src="./img/tiendaimg16.jpg" alt="imagen 16">
+            </div>
+        </section>
+        <div class="seccion-contactenos" id="seccion-contactenos">
+            <h2>Contáctenos</h2>
+            <hr>
+        </div>
+        <p class="infoContactenos">Contáctenos sobre cualquier cosa relacionada con nuestra empresa o servicio. <br> Haremos todo lo posibles por responder a la brevedad.</p>
+        <section class="contactenos-consular">
+            <div class="preguntasFrecuentes">
+            <h2>Preguntas frecuentes</h2>
+            <hr>
+            
+            <button type="button" class="button_pre" id="button_pre" id="button_pre_1" onclick="mostrarcontenido('contenido_1')">¿Cómo solicitar un reembolos?</button>  
+            <div class="contenido" id="contenido_1">
+            <p class="parrafo-info">Para solicitar un reembolso, sigue estos pasos:</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+            <div class="contenido-info" id="contenido-info_1">
+            <ol>
+                <li>Inicia sesión en tu cuenta en nuestro sitio web.</li>
+                <li>Ve a la sección "Contacténos"</li>
+                <li>Selecciona  "Crear Solicitud" ingrese los datos requeridos.</li>
+                <li>En categoria selecciona "solicitar reembolso" , describa el asunto y descripcion.</li>
+                <li>Adjunte el pago relacionado con la compra a reembolsar.</li>
+                <li>De clic en " Enviar ".</li>
+            </ol>
+            </div>
+            </div>
+    
+            <button type="button" class="button_pre" id="button_pre_2" onclick="mostrarcontenido('contenido_2')">Una vez hecha la compra. ¿Puedo cancelar mi pedido?</button>
+            <div class="contenido" id="contenido_2">
+            <p class="parrafo-info">No, una vez que la compra ha sido realizada, no es posible cancelar el pedido. Si ya no deseas el producto, deberás esperar a recibirlo y luego proceder con una solicitud de devolución y reembolso según nuestras políticas de devoluciones. Consulta nuestra política de devoluciones para más detalles sobre cómo proceder en estos casos.</p>
+            </div>       
+                
+            <button type="button" class="button_pre" id="button_pre_3"  onclick="mostrarcontenido('contenido_3')">¿Cómo me registro?</button>
+            <div class="contenido" id="contenido_3">
+            <p class="parrafo-info" id="parrafo-info">Registrarse en nuestra tienda deportiva es muy sencillo:</p>
+            <div class="contenido-info">       
+            <ol>
+                <li>Haz clic en el botón "Registrarse" en la esquina superior derecha de la página de inicio.</li>
+                <li>Completa el formulario de registro con tu nombre, correo electrónico y una contraseña segura.</li>
+                <li>Haz clic en "Registrarme".</li>
+                <li>Recibirás un correo electrónico de confirmación. Haz clic en el enlace proporcionado en el correo para activar tu cuenta.</li>
+            </ol>
+            </div>
+            </div>
+
+            <button type="button" class="button_pre"  id="button_pre_4"  onclick="mostrarcontenido('contenido_4')">Cómo puedo solicitar una peticion?</button>
+            <div class="contenido" id="contenido_4">
+            <p class="parrafo-info" id="parrafo-info" >Para realizar una petición, sigue estos pasos:</p>
+            <div class="contenido-info">
+            <ol>
+                <li>Inicia sesión en tu cuenta en nuestro sitio web.</li>
+                <li>Ve a la sección "Contacténos"</li>
+                <li>Selecciona  "Crear Solicitud" ingrese los datos requeridos.</li>
+                <li>En categoria selecciona "petición", describa el asunto y descripcion.</li>
+                <li>De clic en " Enviar"</li>
+            </ol>
+            </div>
+            </div>
+            </div>
+
+            <div class="datos-contactenos">
+            <div class="direccion">
+                <i class="fas fa-map-marker-alt"></i>
+                <a>Calle 134 53 - 23 Bogotá Colombia</a>
+            </div>
+            <div class="correo">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@example.com">info@example.com</a>
+            </div>
+            <div class="telefono">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+1234567890">+57 316 234 23 12</a>
+            </div>
+            <div class="btnsolicitud">
+                <button type="button" id="btnCrearsolicitud"  onclick="mostrarFomulario1()">Crear Solicitud</button>
+            </div>
+            </div>
+        </section>
+        <section class="contactenos-fomulario" id="contactenos-fomulario">
+            <div class="form-contc"> 
+            <div class="formulContactenos">
+                <h2>Formulario de solicitud</h2>
+                <br>
+                <form id="form" class="form-contactenos">
+                    <div class="formulario-grupo">
+                        <label for="nombre">Nombre completo*</label>
+                        <input type="text" id="nombre" required>
+        
+                        <label for="telefono">Número de teléfono*</label>
+                        <input type="number" id="celphone" required>
+        
+                        <label for="email">Correo electrónico*</label>
+                        <input type="email" id="email" required>
+        
+                        <label for="direccion">Dirección (Opcional)</label>
+                        <input type="text" id="direccion">
+        
+                        <label for="categoria">Categoría*</label>
+                        <select class="categoria" required>
+                            <option value="">Seleccione</option>
+                            <option value="solicitud_de_rembolso">Solicitud de reembolso</option>
+                            <option value="peticiones">Peticiones</option>
+                            <option value="queja">Queja</option>
+                            <option value="subgerencia">Subgerencia</option>
+                            <option value="reclamo">Reclamo</option>
+                        </select>
+        
+                        <label for="asunto">Asunto*</label>
+                        <input type="text" id="asunto" required>
+        
+                        <label for="descripcion">Descripción*</label>
+                        <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+        
+                        <label for="adjunto">Adjuntar Archivos</label>
+                        <input type="file" id="adjunto" name="adjunto">
+                        <div class="contactenos_terminos">
+                            <input type="checkbox" id="aceptarTerminos" name="aceptarTerminos" required>
+                            <label for="aceptarTerminos">He leído y acepto las <a href="#">Políticas de privacidad</a> y los <a href="#">Términos y condiciones</a></label>
+                        </div>
+        
+                        <button type="submit" onclick="btnEnviar()">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="imagenContactenos">
+                <img src="./img/contacimg1.jpg" alt="imagen">
+            </div>
+        </div>
+        </section>   
+        <div class="seccion-marcas">
+            <h2>Nuestras marcas</h2>
+            <hr>
+        </div> 
+
+        <div class="marcas">
+            <img src="img/nike.png" alt="logo nike">
+            <img src="img/dunlop.png" alt="logo dunlop">
+            <img src="img/cube.png" alt="logo cube">
+            <img src="img/adidas.png" alt="logo adidas">
+            <img src="img/fila.png" alt="logo fila">
+        </div> 
+        <h1>Productos</h1>
+        <div id="productos"></div>       
+        </main>
+        <footer class="pie">
+            <div class="informacion">
+            <ul class="pie-info">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/sobreNosotros.html">Sobre Nosotros</a></li>
+                <li><a href="./pages/contactenos.html">Contáctenos</a></li>
+                <li><a href="#">Términos y condiciones </a></li>  
+                <li><a href="#">Politicas y privacidad</a></li> 
+            </ul>  
+            <div class="info">
+            <div class="info-contacto">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Calle 134 53 - 23 Bogotá Colombia</p>
+            </div>
+            <div class="info-contacto">
+            <i class="fas fa-envelope"></i>
+            <p>info@sportsls.com</p>
+            </div>
+            <div class="info-contacto">
+            <i class="fas fa-phone"></i>
+            <p>+57 316 234 23 12</p>
+            </div>
+        </div>
+        <div class="redesSociales">
+        <a href="https://www.whatsapp.com/?lang=es_LA" class="fa-brands fa-whatsapp"></a>
+        <a href="https://www.facebook.com/?stype=lo&deoia=1&jlou=AfcMNvE7B_aFfwZk2EgLQjFFf87l_VcqxvJbwTjvY9pALcvloq_AkpROvQdwJ6n0z_uepvqeqIIxMxEjVlN-ykkTjxL3z7MknYjdm2EI2dc34w&smuh=14183&lh=Ac86DsX8t4mwqodpkNw" class="fa-brands fa-facebook"></a>
+        <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F&hl=es-es&aa_click=8891933284028179" class="fa-brands fa-instagram"></a>
+        <a href="https://www.tiktok.com/login?lang=es&redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fupload%3Flang%3Des" class="fa-brands fa-tiktok"></i></a>
+        </div>
+        </div>
+        <div class="derechos">
+        <P>@2024 sportsls | Todos los derechos reservados</P>
+        </div>
+  
+        </footer>
+        
+        <script>
+        if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+        navigator.serviceWorker
+        .register("/sw.js")
+        .then(reg => console.log("Service Worker registrado:", reg))
+        .catch(err => console.log("Error al registrar SW:", err));
+        });
+        }
+        </script>
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./js/app.js"></script>    
+</body>
+</html>

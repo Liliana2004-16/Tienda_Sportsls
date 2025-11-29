@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="../css/style.css">
+    <!--link de iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--link tipo de letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Sawarabi+Gothic&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Carrito de compras</title>
+</head>
+<body>
+    <header class="header">
+
+        <div class="container">
+         <div class="logo">
+            <img src="../img/logosportsls.jpeg" alt="logo sportsls" />
+         </div>
+            <div class="menu">
+            <nav>
+                <ul class="silebar" id="silebar">
+                    <li class="hideSilebar"><a href="#" onclick=hideSilebar()><i class="fas fa-times"></i></a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./tienda.html">Tienda</a></li>
+                    <li><a href="../index.html">Sobre Nosotros</a></li>
+                    <li><a href="../index.html">Contáctenos</a></li>
+                    <li><a href="./carrito.html"class="fa-solid fa-cart-shopping"></a></li>
+                    <li><a href="../index.html"class="fa-solid fa-phone"></a></li>
+                    <button class="boton2"onclick="window.location.href='./registrarme.html'">Registrarme</button>
+                   
+                 </ul>
+              <ul class="menu1">
+                <li><a href="../index.html">Inicio</a></li>
+                <li ><a href="./tienda.html">Tienda</a></li>
+                <li ><a href="../index.html">Sobre Nosotros</a></li>
+                <li ><a href="../index.html">Contáctenos</a></li>
+                <li ><a href="./carrito.html"class="fa-solid fa-cart-shopping"></a></li>
+                <li ><a href="../index.html"class="fa-solid fa-phone"></a></li>
+                <button class="boton1"onclick="window.location.href='./registrarme.html'">Registrarme</button> 
+                <li class="open"><a href="#" onclick=showSilebar()><i class="fa-solid fa-bars"></i></a></li>
+             </ul>  
+                      
+            </nav>                  
+            </div>
+        </div>
+       
+             
+    </header>
+    <main class="main-carrito">
+        <div class="productos-carrito" id="productosCarrito"></div>
+        <div class="totales">
+            <p>Valor Total: $<span id="totalCompra">0</span></p>
+            <p>Total de Productos: <span id="totalProductos">0</span></p>
+            <button id="vaciarCarrito">Vaciar Carrito</button>
+        </div>
+
+        <div class=" form-metodo-pago">  
+        <form action="" class="form-pago" method="POST">
+            <h2>Registro de compra</h2>
+            <p>Antes de darle clic en la opción de comprar registre los siguientes datos:</p>
+            <br>
+            <div class="form-group">
+                <label for="nombre">Nombre de quien recibe:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="cedula">Número de Cédula:</label>
+                <input type="text" id="cedula" name="cedula" required>
+
+                <label for="direccion">Dirección de Entrega:</label>
+                <input type="text" id="direccion" name="direccion" required>
+
+                <label for="celular">Número de Celular:</label>
+                <input type="tel" id="celular" name="celular" required>
+
+                <label for="metodo_pago">Método de Pago:</label>
+                <select  class="metodo_pago" name="metodo_pago" required>
+                    <option value="">Selecciona</option>
+                    <option value="pse">PSE</option>
+                    <option value="bancolombia">Bancolombia</option>
+                    <option value="nequi">Nequi</option>
+                    <option value="visa">Visa</option>
+                    <option value="daviplata">Daviplata</option>
+                </select>
+                <div class="carrito_terminos">
+                    <input type="checkbox" id="aceptarTerminos" name="aceptarTerminos" required>
+                    <label for="aceptarTerminos">He leído y acepto las <a href="#">Políticas de privacidad</a> y los <a href="#">Términos y condiciones</a></label>
+                </div>
+            </div>
+            <div class="registroGuardar">
+                <button type="submit" onclick="btnCompra()">Comprar</button>
+            </div>    
+                    
+        </form>
+        </div>
+ 
+
+    </main> 
+    <footer class="pie">
+        <div class="informacion">
+        <ul class="pie-info">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../pages/sobreNosotros.html">Sobre Nosotros</a></li>
+            <li><a href="../pages/contactenos.html">Contáctenos</a></li>
+            <li><a href="#">Términos y condiciones </a></li>  
+            <li><a href="#">Politicas y privacidad</a></li> 
+        </ul>  
+        <div class="info">
+        <div class="info-contacto">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>Calle 134 53 - 23 Bogotá Colombia</p>
+        </div>
+        <div class="info-contacto">
+        <i class="fas fa-envelope"></i>
+        <p>info@sportsls.com</p>
+        </div>
+        <div class="info-contacto">
+        <i class="fas fa-phone"></i>
+        <p>+57 316 234 23 12</p>
+        </div>
+
+        </div>
+        <div class="redesSociales">
+            <a href="https://www.whatsapp.com/?lang=es_LA" class="fa-brands fa-whatsapp"></a>
+            <a href="https://www.facebook.com/?stype=lo&deoia=1&jlou=AfcMNvE7B_aFfwZk2EgLQjFFf87l_VcqxvJbwTjvY9pALcvloq_AkpROvQdwJ6n0z_uepvqeqIIxMxEjVlN-ykkTjxL3z7MknYjdm2EI2dc34w&smuh=14183&lh=Ac86DsX8t4mwqodpkNw" class="fa-brands fa-facebook"></a>
+            <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F&hl=es-es&aa_click=8891933284028179" class="fa-brands fa-instagram"></a>
+            <a href="https://www.tiktok.com/login?lang=es&redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fupload%3Flang%3Des" class="fa-brands fa-tiktok"></i></a>
+        </div>
+        </div>
+        <div class="derechos">
+        <P>@2024 sportsls | Todos los derechos reservados</P>
+        </div>
+    </footer>
+    
+   
+    <script src="../js/app.js"></script>
+</body>
+</html>

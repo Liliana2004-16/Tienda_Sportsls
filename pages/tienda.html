@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--link de iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--link tipo de letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Sawarabi+Gothic&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Tienda</title>
+</head>
+<body>
+    <header class="header">
+
+        <div class="container">
+         <div class="logo">
+            <img src="../img/logosportsls.jpeg" alt="logo sportsls" />
+         </div>
+            <div class="menu">
+            <nav>
+                <ul class="silebar" id="silebar">
+                    <li class="hideSilebar"><a href="#" onclick=hideSilebar()><i class="fas fa-times"></i></a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./tienda.html">Tienda</a></li>
+                    <li><a href="../index.html">Sobre Nosotros</a></li>
+                    <li><a href="../index.html">Contáctenos</a></li>
+                    <li><a href="./carrito.html"class="fa-solid fa-cart-shopping"></a></li>
+                    <li><a href="../index.html"class="fa-solid fa-phone"></a></li>
+                    <button class="boton2"onclick="window.location.href='./registrarme.html'">Registrarme</button>
+                   
+                 </ul>
+              <ul class="menu1">
+                <li><a href="../index.html">Inicio</a></li>
+                <li ><a href="./tienda.html">Tienda</a></li>
+                <li ><a href="../index.html">Sobre Nosotros</a></li>
+                <li ><a href="../index.html">Contáctenos</a></li>
+                <li ><a href="./carrito.html"class="fa-solid fa-cart-shopping"></a></li>
+                <li ><a href="../index.html"class="fa-solid fa-phone"></a></li>
+                <button class="boton1"onclick="window.location.href='./registrarme.html'">Registrarme</button> 
+                <li class="open"><a href="#" onclick=showSilebar()><i class="fa-solid fa-bars"></i></a></li>
+             </ul>  
+                      
+            </nav>                  
+            </div>
+        </div>     
+    </header>
+
+    <main class="maintienda">
+        <section class="buscador-filtro">  
+            <div class="buscador">
+                <li>
+                <form action="">
+                    <input
+                    type="text"
+                    name="buscar"
+                     id="input_buscar"
+                     placeholder="Buscar...."
+                    />   
+                    <a id="buscando">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </form>
+                 </li>
+            </div>
+      
+             <div class="coleccion">
+             <button class="coleccion-button">Colección</button>
+            <div class="coleccion-opciones">
+                <a href="#" data-filter="tenis">Tenis</a>
+                <a href="#" data-filter="atletismo">Atletismo</a>
+                <a href="#" data-filter="futbol">Fútbol</a>
+                <a href="#" data-filter="baloncesto">Baloncesto</a>
+                <a href="#" data-filter="ciclismo">ciclismo</a>
+                <a href="#" data-filter="mujer">Mujer</a>
+                <a href="#" data-filter="hombre">Hombre</a>
+            </div>
+            </div>
+        </section>
+ 
+        <section class="productosTienda">
+            <div class="producto" data-category="atletismo mujer">
+                <img src="../img/tiendaimg1.jpg" alt=" ">
+                <p>Camiseta de tirantes de Atletismo para mujer.</p>
+                <p class="precio">$ 80.000</p>
+                <button class="botonAgregar">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-category="tenis mujer">
+                <img src="../img/tiendaimg2.jpg" alt=" ">
+                <p>Falda y camiseta de tirantes de tenis mujer.</p>
+                <p class="precio">$ 120.000</p>
+                <button class="botonAgregar">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-category="atletismo mujer">
+                <img src="../img/tiendaimg5.jpg" alt=" ">
+                <p>Licra con cierre de atletismo</p>
+                <p class="precio">$ 110.000</p>
+                <button class="botonAgregar">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-category="ciclismo mujer">
+                <img src="../img/tiendaimg24.jpg" alt=" ">
+                <p>Uniforme de ciclismo color morado mujer.</p>
+                <p class="precio">$ 98.000</p>
+                <button class="botonAgregar" >Agregar al carrito</button>
+            </div>
+            <div class="producto" data-category="atletismo mujer">
+                <img src="../img/tiendaimg6.jpg" alt=" ">
+                <p>Conjunto deportivo color azul de mujer</p>
+                <p class="precio">$ 99.000</p>
+                <button class="botonAgregar">Agregar al carrito</button>
+            </div>
+    
+            <div class="producto" data-category="atletismo mujer">
+            <img src="../img/tiendaimg20.jpg" alt=" ">
+                <p>Conjunto deportivo de atletismo de mujer</p>
+                <p class="precio">$ 125.000</p>
+                <button class="botonAgregar">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-category="atletismo mujer">
+                <img src="../img/tiendaimg15.jpg" alt=" ">
+                <p>Leggins de atletismo mujer</p>
+                <p class="precio">$ 75.000</p>
+                <button class="botonAgregar" >Agregar al carrito</button>
+            </div>
+
+             <div class="producto" data-category="ciclismo hombre">
+                <img src="../img/tiendaimg8.jpg" alt=" ">
+                <p>Maillot de ciclismo para hombre</p>
+                <p class="precio">$ 340.000</p>
+                <button class="botonAgregar">Agregar al carrito</button>
+            </div>
+
+            <div class="producto" data-category="futbol hombre ">
+                <img src="../img/tiendaimg26.jpg" alt=" ">
+                <p>Uniforme deportivo de futbol hombre.</p>
+                <p class="precio">$ 99.000</p>
+                <button class="botonAgregar" >Agregar al carrito</button>
+            </div>
+
+            <div class="producto"data-category="baloncesto hombre ">
+                <img src="../img/tiendaimg27.jpg" alt=" ">
+                <p>Uniforme deportivo de baloncesto de hombre.</p>
+                <p class="precio">$ 99.000</p>
+                <button class="botonAgregar" >Agregar al carrito</button>
+            </div>
+
+            <div class="producto" data-category="baloncesto hombre ">
+                <img src="../img/tiendaimg28.jpg" alt=" ">
+                <p>Uniforme de baloncesto equipo de Sacramento hombre.</p>
+                <p class="precio">$ 99.000</p>
+                <button class="botonAgregar" >Agregar al carrito</button>
+            </div>
+
+            <div class="producto" data-category="baloncesto hombre ">
+                <img src="../img/tiendaimg29.jpg" alt=" ">
+                <p>Uniforme de baloncesto esquipo Lakers hombre.</p>
+                <p class="precio">$ 340.000</p>
+                <button class="botonAgregar">Agregar al carrito</button>
+            </div>
+
+            <div class="producto" data-category="ciclismo hombre ">
+                <img src="../img/tiendaimg16.jpg" alt=" ">
+                <p>Maillot de ciclismo para hombre</p>
+                <p class="precio">$ 340.000</p>
+                <button class="botonAgregar">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-category="baloncesto">
+                <img src="../img/tiendaimg7.jpg" alt=" ">
+                <p>Balón de baloncesto marca xx66 </p>
+                <p class="precio">$ 99.000</p>
+                <button class="botonAgregar" >Agregar al carrito</button>
+            </div>
+
+            <div class="producto" data-category="tenis ">
+                <img src="../img/tiendaimg14.jpg" alt=" ">
+                <p>Raqueta de tenis azul preencordada de 27 pulgadas</p>
+                <p class="precio">$ 350.000</p>
+                <button class="botonAgregar">Agregar al carrito</button>
+            </div>
+
+            <div class="producto"data-category="tenis ">
+                <img src="../img/tiendaimg22.jpg" alt=" ">
+                <p>Raqueta de tenis roja preencordada de 27 pulgadas</p>
+                <p class="precio">$ 350.000</p>
+                <button class="botonAgregar" >Agregar al carrito</button>
+            </div>
+    
+
+            <div class="producto" data-category="futbol">
+                <img src="../img/tiendaimg13.jpg" alt=" ">
+                <p>Guayos de futbol Adidas</p>
+                <p class="precio">$ 250.000</p>
+                <button class="botonAgregar" >Agregar al carrito</button>
+            </div>
+
+            <div class="producto"data-category="tenis  ">
+                <img src="../img/tiendaimg11.jpg" alt=" ">
+                <p>Pelota de tenis marca Wilson </p>
+                <p class="precio">$ 65.000</p>
+                <button class="botonAgregar" >Agregar al carrito</button>
+            </div>
+
+            <div class="producto" data-category="tenis  ">
+                <img src="../img/tiendaimg25.jpg" alt=" ">
+                <p>Pelota de tenis marca Dunlop</p>
+                <p class="precio">$ 350.000</p>
+                <button class="botonAgregar" >Agregar al carrito</button>
+            </div>
+
+            <div class="producto" data-category="baloncesto">
+                <img src="../img/tiendaimg30.jpg" alt=" ">
+                <p>Balón de baloncesto marca Spalding</p>
+                <p class="precio">$ 150.000</p>
+                <button class="botonAgregar" >Agregar al carrito</button>
+            </div>
+
+            <div class="producto" data-category="futbol ">
+                <img src="../img/tiendaimg31.jpg" alt=" ">
+                <p>Balón de futbol marca Adidas </p>
+                <p class="precio">$ 180.000</p>
+                <button class="botonAgregar" >Agregar al carrito</button>
+            </div>
+
+            <div class="producto" data-category="futbol">
+                <img src="../img/tiendaimg32.jpg" alt=" ">
+                <p>Balón de futbol marca Adidas </p>
+                <p class="precio">$ 145.000</p>
+                <button class="botonAgregar">Agregar al carrito</button>
+            </div>
+
+            <div class="producto" data-category="futbol">
+                <img src="../img/tiendaimg21.jpg" alt=" ">
+                <p>Balón de futbol marca Adidas </p>
+                <p class="precio">$ 121.000</p>
+                <button class="botonAgregar">Agregar al carrito</button>
+            </div>
+
+            <div class="producto" data-category="atletismo mujer ">
+                <img src="../img/tiendaimg18.jpg" alt=" ">
+                <p>Conjunto deportivo de atletismo mujer </p>
+                <p class="precio">$ 121.000</p>
+                <button class="botonAgregar">Agregar al carrito</button>
+            </div>
+
+
+        </section>
+    </main>
+    <footer class="pie">
+        <div class="informacion">
+        <ul class="pie-info">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../pages/sobreNosotros.html">Sobre Nosotros</a></li>
+            <li><a href="../pages/contactenos.html">Contáctenos</a></li>
+            <li><a href="#">Términos y condiciones </a></li>  
+            <li><a href="#">Politicas y privacidad</a></li> 
+        </ul>  
+        <div class="info">
+        <div class="info-contacto">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>Calle 134 53 - 23 Bogotá Colombia</p>
+        </div>
+        <div class="info-contacto">
+        <i class="fas fa-envelope"></i>
+        <p>info@sportsls.com</p>
+        </div>
+        <div class="info-contacto">
+        <i class="fas fa-phone"></i>
+        <p>+57 316 234 23 12</p>
+        </div>
+
+        </div>
+        <div class="redesSociales">
+            <a href="https://www.whatsapp.com/?lang=es_LA" class="fa-brands fa-whatsapp"></a>
+            <a href="https://www.facebook.com/?stype=lo&deoia=1&jlou=AfcMNvE7B_aFfwZk2EgLQjFFf87l_VcqxvJbwTjvY9pALcvloq_AkpROvQdwJ6n0z_uepvqeqIIxMxEjVlN-ykkTjxL3z7MknYjdm2EI2dc34w&smuh=14183&lh=Ac86DsX8t4mwqodpkNw" class="fa-brands fa-facebook"></a>
+            <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F&hl=es-es&aa_click=8891933284028179" class="fa-brands fa-instagram"></a>
+            <a href="https://www.tiktok.com/login?lang=es&redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fupload%3Flang%3Des" class="fa-brands fa-tiktok"></i></a>
+        </div>
+        </div>
+        <div class="derechos">
+        <P>@2024 sportsls | Todos los derechos reservados</P>
+        </div>
+    </footer>
+    
+
+    <script src="../js/app.js"></script>
+</body>
+</html>
