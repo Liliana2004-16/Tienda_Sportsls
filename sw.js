@@ -8,7 +8,7 @@ const URLS_TO_CACHE = [
   '/offline.html'
 ];
 
-// Instalación: cachear archivos esenciales
+
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => cache.addAll(URLS_TO_CACHE))
@@ -16,7 +16,7 @@ self.addEventListener('install', event => {
   self.skipWaiting();
 });
 
-// Activación: limpieza de caches viejos
+
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys => 
@@ -29,17 +29,15 @@ self.addEventListener('activate', event => {
   );
   self.clients.claim();
 });
-
-// Estrategia: Network First con fallback a cache y offline
+e
 self.addEventListener('fetch', event => {
 
-  // Solo manejar solicitudes GET
   if (event.request.method !== 'GET') return;
 
   event.respondWith(
     fetch(event.request)
       .then(response => {
-        // Guardar copia en cache
+        
         const responseClone = response.clone();
         caches.open(CACHE_NAME).then(cache => cache.put(event.request, responseClone));
         return response;
@@ -48,12 +46,10 @@ self.addEventListener('fetch', event => {
         caches.match(event.request).then(cached => {
           if (cached) return cached;
 
-          // Para navegación permite fallback a index.html (SPA)
           if (event.request.mode === 'navigate') {
             return caches.match('/index.html');
           }
 
-          // Si no existe nada, mostrar offline
           return caches.match('/offline.html');
         })
       )
